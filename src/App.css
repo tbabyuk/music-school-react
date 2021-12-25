@@ -1,38 +1,232 @@
-.App {
-  text-align: center;
+/* CUSTOM TEXT COLOURS */
+
+.dcam-text-red {
+    color:#c45429;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.dcam-text-orange {
+    color:#ef8354;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.dcam-text-yellow {
+    color: #fff05a;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.dcam-text-blue-light {
+    color: #68ace3;
 }
 
-.App-link {
-  color: #61dafb;
+.dcam-text-blue-reg {
+    color: #216dab;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.dcam-text-blue-dark {
+    color: #103756;
+}
+
+.dcam-text-gray {
+    color: #dadada;
+}
+
+.dcam-text-black {
+    color:#08080880;
+}
+
+
+/* CUSTOM TEXT STYLES */
+.roboto-reg {
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal; 
+    }
+    
+.roboto-bold {
+font-family: 'Roboto', sans-serif;
+font-weight: bold;
+}
+
+.roboto-ital {
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+}
+
+
+
+/* CUSTOM BACKGROUND COLOURS */
+
+.dcam-bg-gradient {
+    background-image: linear-gradient(to right, #216dab, #103756 55%);
+}
+
+.dcam-bg-gradient-2 {
+    background-image: linear-gradient(to right, #ef8354, #c45429 55%);
+}
+
+.dcam-gray {
+    background-color: #dadada;
+}
+
+.dcam-red {
+    background-color: #c45429;
+}
+
+.dcam-yellow {
+    background-color:#fff05a;
+}
+
+.dcam-orange {
+    background-color: #ef8354;
+}
+
+.dcam-blue-light {
+    background-color: #68ace3;
+}
+
+.dcam-blue-reg {
+    background-color: #216dab;
+}
+
+.dcam-blue-dark {
+    background-color: #103756;
+}
+
+.dcam-green {
+    background-color: rgb(74, 173, 82);
+}
+
+/* .dcam-green:hover {
+    background-color: rgb(74, 173, 82, 0.8);
+} */
+
+.banner {
+    height: 420px;
+}
+
+.top-social a:hover {
+    color: #ef8354;
+}
+
+.top-social .fab:hover {
+    color: #ef8354;
+}
+
+.top-social {
+    border-bottom: 2px solid #dadada;
+}
+
+.banner-row-height {
+    height: 100%;
+}
+
+.bg-dcam {
+    background-image: url(./img/banner1.png);
+    background-size: cover;
+    background-position:center;
+}
+
+
+.filter {
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.roboto-light {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100; 
+    }
+
+.ovo {
+    font-family: 'Ovo', serif;
+}
+
+.min {
+    min-width: 220px;
+}
+
+.offers-icon {
+    color:#68ace3; 
+    border: 6px solid #68ace3; 
+    border-radius: 25%; 
+    padding: 30px;
+}
+
+/* .fab:hover {
+    color: #212529;
+} */
+
+.no-border {
+    border: 0;
+}
+
+.dcam-border {
+    border: 2px solid #ef8354;
+    border-left: none;
+    border-right: none;
+}
+
+ol, ul {
+    list-style-position: inside;
+}
+
+img {
+    overflow: hidden;
+}
+
+
+.dcam-btn:hover {
+    transform:rotate(-6deg);
+}
+
+
+/*CAROUSEL CODE*/
+
+.slider-div {
+    height: 350px;
+    overflow: hidden;
+}
+
+
+@media screen and (max-width: 992px) {
+    .carousel-item img {
+     width: 75%
+    }}
+
+.dropdown-menu {
+    background-color: #103756;
+
+}
+
+.dropdown-menu a {
+    color:#93A5B3;
+
+}
+
+.testimonials-bg {
+    background-image: linear-gradient(to left, #fff, #e0dede);
+
+}
+
+.testimonials-shadow {
+    box-shadow: -5px 5px 10px rgb(150, 149, 149);
+}
+
+
+.get-started {
+    background-image: url(./img/ready2.png);
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+}
+
+
+.zoom:hover {
+    transform: scale(1.5);
+    z-index: 1;
+}
+
+
+#typed-strings p {
+    text-decoration: bold;
+}
+
+.lessons {
+    font-style: italic;
 }
