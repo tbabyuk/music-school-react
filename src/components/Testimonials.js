@@ -23,7 +23,7 @@ function Testimonials() {
                             </div>
                             <div className="d-flex pt-4">
                                 <div>
-                                    <img src="img/testimonials/lenka.png" />
+                                    <img src={require("../img/testimonials/lenka.png")} />
                                 </div>
                                 <div className="ms-3">
                                     <h6 className="mb-0">Lenka Wendl</h6>
@@ -43,7 +43,7 @@ function Testimonials() {
                             <div className="text-end"><i className="fas fa-quote-right fa-lg"></i></div>
                             <div className="d-flex pt-4">
                                 <div>
-                                    <img src="img/testimonials/nicole.png" />
+                                    <img src={require("../img/testimonials/nicole.png")} />
                                 </div>
                                 <div className="ms-3">
                                     <h6 className="mb-0">Nicole Planeta</h6>
@@ -63,7 +63,7 @@ function Testimonials() {
                             <div className="text-end"><i className="fas fa-quote-right fa-lg"></i></div>
                             <div className="d-flex pt-4">
                                 <div>
-                                    <img src="img/testimonials/daniel.png" />
+                                    <img src={require("../img/testimonials/daniel.png")} />
                                 </div>
                                 <div className="ms-3">
                                     <h6 className="mb-0">Daniel Vendramin</h6>
@@ -83,7 +83,7 @@ function Testimonials() {
                             <div className="text-end"><i className="fas fa-quote-right fa-lg"></i></div>
                             <div className="d-flex pt-4">
                                 <div>
-                                    <img src="img/testimonials/viviane.png" />
+                                    <img src={require("../img/testimonials/viviane.png")} />
                                 </div>
                                 <div className="ms-3">
                                     <h6 className="mb-0">Viviane Sena</h6>

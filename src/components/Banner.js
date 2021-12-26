@@ -6,6 +6,11 @@ import FreeTrialModal from './FreeTrialModal';
 function Banner() {
 
 
+function FreeTrialModal() {
+    console.log("Hello there")
+}
+
+
     return (
         <div className="container-fluid bg-dcam bg-light mb-0 banner px-0">
             <div className="container-fluid d-flex justify-content-end" style={{height: "100%"}}>

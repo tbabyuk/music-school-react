@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import { Outlet, Link } from "react-router-dom";
 
 function Navbar() {
     return (
@@ -12,7 +13,8 @@ function Navbar() {
                 <div className="collapse navbar-collapse navbar-dark justify-content-end" id="navbarNav">
                     <ul className="navbar-nav roboto text-uppercase">
                         <li className="nav-item">
-                            <a className="nav-link active dcam-btn" aria-current="page" href="#">Home</a>
+                            {/* <a className="nav-link active dcam-btn" aria-current="page" href="#">Home</a> */}
+                            <Link to="/" className="nav-link active dcam-btn" aria-current="page">Home</Link>
                         </li>
                         <li className="nav-item dropdown">
                             <a className="nav-link dropdown-toggle dcam-btn" href="#" id="lessonsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Music Lessons</a>
@@ -28,10 +30,10 @@ function Navbar() {
                         </li>
 
                         <li className="nav-item">
-                            <a className="nav-link dcam-btn" href="rates.html">Rates</a>
+                            <Link to="/rates" className="nav-link dcam-btn">Rates</Link>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link dcam-btn" href="teachers.html">Teachers</a>
+                            <Link to="/teachers" className="nav-link dcam-btn">Teachers</Link>
                         </li>
                         <li className="nav-item">
                             <a className="nav-link dcam-btn" href="#reviews">Reviews</a>
@@ -47,7 +49,7 @@ function Navbar() {
                             </ul>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link dcam-btn" href="contact.html">Contact</a>
+                            <Link to="/contact" className="nav-link dcam-btn">Contact Us</Link>
                         </li>
                         <li className="nav-item">
                             <a className="nav-link dcam-btn" href="#">Blog</a>

@@ -2,27 +2,28 @@ import './App.css';
 import TopSocial from "./components/TopSocial";
 import Navbar from "./components/Navbar";
 import Banner from "./components/Banner";
-import Offerings from './components/Offerings';
-import Teachers from "./components/Teachers";
-import Testimonials from './components/Testimonials';
-import Getstarted from "./components/Getstarted";
-import Footer from "./components/Footer";
-import FreeTrialModal from "./components/FreeTrialModal";
+import RatesPage from "./components/RatesPage";
+import TeachersPage from "./components/TeachersPage";
+import ContactPage from "./components/ContactPage";
+import HomePage from "./components/HomePage";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 
 function App() {
   return (
-    <div className="App">
-      <TopSocial />
-      <Navbar />
-      <Banner />
-      <Offerings />
-      <Teachers />
-      <Testimonials />
-      <Getstarted />
-      <Footer />
-      <FreeTrialModal />
-    </div>
+    <Router>
+      <div className="App">
+        <TopSocial />
+        <Navbar />
+        <Banner />
+        <Switch>
+          <Route exact path="/"><HomePage /></Route>
+          <Route path="/rates"><RatesPage /></Route>
+          <Route path="/teachers"><TeachersPage /></Route>
+          <Route path="/contact"><ContactPage /></Route>
+        </Switch>
+      </div>
+    </Router>
   );
 }
 
