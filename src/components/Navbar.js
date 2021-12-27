@@ -1,5 +1,6 @@
 import React from 'react';
-import { Outlet, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
+
 
 function Navbar() {
     return (
@@ -13,7 +14,6 @@ function Navbar() {
                 <div className="collapse navbar-collapse navbar-dark justify-content-end" id="navbarNav">
                     <ul className="navbar-nav roboto text-uppercase">
                         <li className="nav-item">
-                            {/* <a className="nav-link active dcam-btn" aria-current="page" href="#">Home</a> */}
                             <Link to="/" className="nav-link active dcam-btn" aria-current="page">Home</Link>
                         </li>
                         <li className="nav-item dropdown">
@@ -39,23 +39,17 @@ function Navbar() {
                             <a className="nav-link dcam-btn" href="#reviews">Reviews</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link dcam-btn" href="gallery.html">Gallery</a>
+                            <Link to="/gallery" className="nav-link dcam-btn">Gallery</Link>
                         </li>
                         <li className="nav-item dropdown">
                             <a className="nav-link dropdown-toggle dcam-btn" href="#" id="aboutDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">About Us</a>
                             <ul className="dropdown-menu dcam-blue-reg" aria-labelledby="aboutDropdown">
-                                <li><a className="dropdown-item" href="our-mission.html">Our Mission</a></li>
-                                <li><a className="dropdown-item" href="our-story.html">Our Story</a></li>
+                                <li><Link to="/mission" className="dropdown-item">Our Mission</Link></li>
+                                <li><Link to="/story" className="dropdown-item">Our Story</Link></li>
                             </ul>
                         </li>
                         <li className="nav-item">
                             <Link to="/contact" className="nav-link dcam-btn">Contact Us</Link>
-                        </li>
-                        <li className="nav-item">
-                            <a className="nav-link dcam-btn" href="#">Blog</a>
-                        </li>
-                        <li className="nav-item">
-                            <a className="nav-link dcam-btn" href="#">Shop</a>
                         </li>
                     </ul>
                 </div>

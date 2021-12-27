@@ -90,8 +90,6 @@ function ContactPage() {
                 </div>
 
 
-                <hr />
-
                 {/* <div className="row justify-content-center mt-5">
 
                 <h2 className="text-center mb-4">Find us on Google Maps</h2>
