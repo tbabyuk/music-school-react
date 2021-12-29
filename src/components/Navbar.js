@@ -19,13 +19,13 @@ function Navbar() {
                         <li className="nav-item dropdown">
                             <a className="nav-link dropdown-toggle dcam-btn" href="#" id="lessonsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Music Lessons</a>
                             <ul className="dropdown-menu" aria-labelledby="lessonsDropdown">
-                                <li><a className="dropdown-item" href="piano-lessons.html">Piano Lessons</a></li>
-                                <li><a className="dropdown-item" href="#">Guita Lessons</a></li>
-                                <li><a className="dropdown-item" href="#">Drum Lessons</a></li>
-                                <li><a className="dropdown-item" href="#">Voice Lessons</a></li>
-                                <li><a className="dropdown-item" href="#">Music Theory</a></li>
-                                <li><a className="dropdown-item" href="#">Intro to Music Program</a></li>
-                                <li><a className="dropdown-item" href="#">Toddler classNamees</a></li>
+                                <li><Link to="/lessons/piano-lessons" className="dropdown-item">Piano Lessons</Link></li>
+                                <li><Link to="/lessons/guitar-lessons" className="dropdown-item">Guitar Lessons</Link></li>
+                                <li><Link to="/lessons/drum-lessons" className="dropdown-item">Drum Lessons</Link></li>
+                                <li><Link to="/lessons/voice-lessons" className="dropdown-item">Voice Lessons</Link></li>
+                                <li><Link to="/lessons/music-theory-lessons" className="dropdown-item">Music Theory Lessons</Link></li>
+                                <li><Link to="/lessons/intro-to-music" className="dropdown-item">Intro to Music Program</Link></li>
+                                <li><Link to="/lessons/toddler-lessons" className="dropdown-item">Toddler Lessons</Link></li>
                             </ul>
                         </li>
 

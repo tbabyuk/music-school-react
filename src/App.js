@@ -1,5 +1,4 @@
-import './App.css';
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import TopSocial from "./components/TopSocial";
 import Navbar from "./components/Navbar";
 import Banner from "./components/Banner";
@@ -12,6 +11,10 @@ import ContactPage from "./components/ContactPage";
 import HomePage from "./components/HomePage";
 import FooterSection from './components/FooterSection';
 import ScrollToTop from './components/ScrollToTop';
+import ErrorPage from "./components/ErrorPage";
+import Lessons from "./components/Lessons";
+import FreeTrialModal from "./components/modals/FreeTrialModal";
+import InfoPackModal from "./components/modals/InfoPackModal";
 
 
 
@@ -21,17 +24,21 @@ function App() {
       <ScrollToTop />
       <div className="App">
         <TopSocial />
+        <FreeTrialModal />
+        <InfoPackModal />
         <Navbar />
         <Banner />
-        <Switch>
-          <Route exact path="/"><HomePage /></Route>
-          <Route path="/rates"><RatesPage /></Route>
-          <Route path="/teachers"><TeachersPage /></Route>
-          <Route path="/gallery"><GalleryPage /></Route>
-          <Route path="/mission"><OurMissionPage /></Route>
-          <Route path="/story"><OurStoryPage /></Route>
-          <Route path="/contact"><ContactPage /></Route>
-        </Switch>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/rates" element={<RatesPage />} />
+          <Route path="/teachers" element={<TeachersPage />} />
+          <Route path="/gallery" element={<GalleryPage />} />
+          <Route path="/mission" element={<OurMissionPage />} />
+          <Route path="/story" element={<OurStoryPage />} />
+          <Route path="/contact" element={<ContactPage />} />
+          <Route path="/lessons/:instrument" element={<Lessons />} />
+          <Route path="*" element={<ErrorPage />} />
+        </Routes>
         <FooterSection />
       </div>
     </Router>

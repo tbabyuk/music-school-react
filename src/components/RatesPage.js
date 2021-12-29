@@ -3,7 +3,7 @@ import React from 'react'
 function RatesPage() {
     return (
         <div>
-            <div className="container mt-5">
+            <div className="container my-5">
 
                 <h3 className="display-4 text-muted">Rates</h3>
                 <hr />
@@ -18,7 +18,7 @@ function RatesPage() {
 
                 <section className="col-10 m-auto text-center my-5">
                     <h4 className="display-6 text-uppercase">Private Lesson Rates</h4>
-                    <a href="img/private-lesson-rates.pdf" download>
+                    <a href={require("../img/private-lesson-rates.pdf")} download>
                         <button type="button" className="btn dcam-green text-white border-dark btn-lg my-5"><i className="fas fa-file-pdf fa-sm" />Download Payment Schedule</button>
                     </a>
 
@@ -38,7 +38,7 @@ function RatesPage() {
                 <hr />
                 <section className="col-10 m-auto text-center mt-5">
                     <h4 className="display-6 text-uppercase">Semi-Private Lesson Rates</h4>
-                    <a href="img/semi-private-lesson-rates.pdf" download>
+                    <a href={require("../img/semi-private-lesson-rates.pdf")} download>
                         <button type="button" className="btn dcam-green text-white border-dark btn-lg my-5"><i className="fas fa-file-pdf fa-sm" />Download Payment Schedule</button>
                     </a>
 
