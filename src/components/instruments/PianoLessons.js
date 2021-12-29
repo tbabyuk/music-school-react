@@ -1,4 +1,6 @@
 import React from 'react'
+import { Link } from "react-router-dom";
+
 
 function PianoLessons() {
     return (
@@ -15,9 +17,9 @@ function PianoLessons() {
                         <div className="col-md-8">
                             <div className="card-body">
                                 <h4 className="card-title mb-4 text-center dcam-text-orange">Overview</h4>
-                                <p className="card-text">Piano is the most popular instrument in the world – and for many good reasons. It’s very visual, extremely expressive, and, unlike many other instruments, allows us to play a large number of notes at the same time. It’s sort of like having a whole orchestra at your fingertips! But as a wise man once said (and as many experienced pianists will tell you): “It’s easy to play the piano, but it’s hard to play it well”.
+                                <p className="card-text">Piano is the most popular instrument in the world – and for many good reasons. It’s very visual, extremely expressive, and, unlike many other instruments, allows us to play a large number of notes at the same time. It’s sort of like having a whole orchestra at your fingertips! But as a wise man once said (and as many experienced pianists will tell you): “It’s easy to play the piano, but it’s hard to play it well”.<br /><br />
 
-                                    At DCAM, we believe technique can make or break your piano playing, which is why we do our best to make sure our students (especially young children) learn correct technique from the very beginning – before it becomes a habit. Having good technique is an absolutely essential foundation to the student’s proper development and growth as a musician.
+                                At DCAM, we believe technique can make or break your piano playing, which is why we do our best to make sure our students (especially young children) learn correct technique from the very beginning – before it becomes a habit. Having good technique is an absolutely essential foundation to the student’s proper development and growth as a musician.<br /><br />
 
                                     We also realize that our students come in many different “shapes and sizes”, which is why our teachers do their best to tailor lessons to each student’s individual skill level and musical taste.
 
@@ -30,7 +32,7 @@ function PianoLessons() {
                     <div className="col col-md-10 mx-auto mt-5">
                         <div className="card-body">
                             <h4 className="card-title mb-4 text-center dcam-text-orange">What is a good age to start piano lessons?</h4>
-                            <p className="card-text">Five is the age at which most children have enough mental focus, self-awareness, and finger strength to start piano lessons. At this age, 30-minute lessons are the recommended option.
+                            <p className="card-text"><strong>Five</strong> is the age at which most children have enough mental focus, self-awareness, and finger strength to start piano lessons. At this age, 30-minute lessons are the recommended option.
 
                                 If your child is younger than 5 and you think they are ready to start lessons – sign them up for a free trial lesson and we will be happy to give you our recommendation!</p>
                         </div>
@@ -38,19 +40,20 @@ function PianoLessons() {
 
 
                     <div className="col col-md-10 mx-auto mt-5">
-                        <div className="card-body">
-                            <h4 className="card-title mb-4 text-center dcam-text-orange">Lesson Format</h4>
-                            <p className="card-text">Private lessons: these are one-on-one lessons with student and teacher. Private lessons are a great option for students looking for highly-focused and individualized music instruction. The teacher is able to give their full attention to one student and students normally progress faster in this environment.
+                    <div className="card-body">
+                        <h4 className="card-title mb-4 text-center dcam-text-orange">Lesson Format</h4>
+                        <p className="card-text"><u>Private lessons</u>: these are one-on-one lessons with student and teacher. Private lessons are a great option for students looking for highly-focused and individualized music instruction. The teacher is able to give their full attention to one student and students normally progress faster in this environment.<br /><br />
 
-                                Semi-private lessons: these lessons consist of two students per teacher. Semi-private lessons can be a budget-friendly option for parents with two children or two friends wanting to learn the same instrument together. The one obvious drawback is that students don’t receive as much focused and individualized attention from the teacher as they do with private lessons.</p>
-                        </div>
+                        <u>Semi-private lessons</u>: these lessons consist of two students per teacher. Semi-private lessons can be a budget-friendly option for parents with two children or two friends wanting to learn the same instrument together. The one obvious drawback is that students don’t receive as much focused and individualized attention from the teacher as they do with private lessons.</p>
+                    </div>
                     </div>
 
                     <div className="col col-md-10 mx-auto mt-5">
                         <div className="card-body">
                             <h4 className="card-title mb-4 text-center dcam-text-orange">Lesson Duration</h4>
                             <p className="card-text">
-                                At DCAM, students can choose between 30-minute, 45-minute, or 1-hour lessons. Small children generally start with 30-minute lessons and increase lesson duration as they get older and/or with the recommendation from their teacher. For teenagers and adults, a minimum lesson time of 45 minutes is strongly recommended.</p>
+                                At DCAM, students can choose between <strong>30-minute</strong>, <strong>45-minute</strong>, or <strong>1-hour lessons</strong>. Small children generally start with 30-minute lessons and increase lesson duration as they get older and/or with the recommendation from their teacher. For teenagers and adults, a minimum lesson time of 45 minutes is strongly recommended.
+                            </p>
                         </div>
                     </div>
 
@@ -67,7 +70,7 @@ function PianoLessons() {
                     </div>
 
 
-                    <div className="row d-flex justify-content-center">
+                    <div className="row d-flex justify-content-center mt-5">
                         <div className="col-md-2 text-center d-flex align-items-center">
                             <img src={require("../../img/piano-lessons/dcam-piano.jpg")} className="img-fluid rounded img-thumbnail mt-5" alt="..." />
                         </div>
@@ -92,7 +95,7 @@ function PianoLessons() {
                         <div className="card-body">
                             <h4 className="card-title mb-4 text-center dcam-text-orange">Teachers</h4>
                             <p className="card-text">
-                                Our teachers are all qualified professionals and passionate musicians. We do our best to match a student with a teacher that we think would best fit their musical goals as well as their personalities. We understand that while some students prefer a relaxed teaching approach, there are always those for whom a more strict approach is more effective. Students also have the option to request to change their teacher if they wish to do so. Learn more about our teachers on our <a href="teachers.html">Teachers Section.</a></p>
+                                Our teachers are all qualified professionals and passionate musicians. We do our best to match a student with a teacher that we think would best fit their musical goals as well as their personalities. We understand that while some students prefer a relaxed teaching approach, there are always those for whom a more strict approach is more effective. Students also have the option to request to change their teacher if they wish to do so. Learn more about our teachers on our <Link to="/teachers">Teachers Section.</Link></p>
                         </div>
                     </div>
 
