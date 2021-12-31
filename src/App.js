@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar";
 import Banner from "./components/Banner";
 import RatesPage from "./components/RatesPage";
 import TeachersPage from "./components/TeachersPage";
+import ReviewsPage from "./components/ReviewsPage";
 import OurMissionPage from './components/OurMissionPage';
 import OurStoryPage from './components/OurStoryPage';
 import GalleryPage from './components/GalleryPage';
@@ -32,6 +33,7 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/rates" element={<RatesPage />} />
           <Route path="/teachers" element={<TeachersPage />} />
+          <Route path="/reviews" element={<ReviewsPage />} />
           <Route path="/gallery" element={<GalleryPage />} />
           <Route path="/mission" element={<OurMissionPage />} />
           <Route path="/story" element={<OurStoryPage />} />

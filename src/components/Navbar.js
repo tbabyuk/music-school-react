@@ -32,7 +32,7 @@ function Navbar() {
                             <Link to="/teachers" className="nav-link dcam-btn">Teachers</Link>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link dcam-btn" href="#reviews">Reviews</a>
+                            <Link to="/reviews" className="nav-link dcam-btn">Reviews</Link>
                         </li>
                         <li className="nav-item">
                             <Link to="/gallery" className="nav-link dcam-btn">Gallery</Link>
